@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Data Pembelian Toko Online</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Pembeli</th>
+                <th>Barang yang Dibeli</th>
+                <th>Tanggal Pemesanan</th>
+                <th>Harga Barang</th>
+                <th>Foto</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Data akan ditampilkan di sini -->
+        </tbody>
+    </table>
+
+    <div class="form-container">
+        <h2>Tambah Data Baru</h2>
+        <input type="text" id="nama" placeholder="Nama Pembeli">
+        <input type="text" id="barang" placeholder="Barang yang Dibeli">
+        <input type="date" id="tanggal" placeholder="Tanggal Pemesanan">
+        <input type="number" id="harga" placeholder="Harga Barang">
+        <input type="file" id="foto" accept="image/*">
+        <button onclick="addData()">Tambah Data</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
